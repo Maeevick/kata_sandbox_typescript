@@ -1,0 +1,61 @@
+version: 2.1
+
+orbs:
+  docker: circleci/docker@1.5.0
+
+executors:
+  node:
+    docker:
+      - image: circleci/node:16-buster
+
+commands:
+  install:
+    parameters:
+      cache_key:
+        type: string
+    steps:
+      - restore_cache:
+          keys:
+            - yarn-install-<< parameters.cache_key >>-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+            - yarn-install-<< parameters.cache_key >>-{{ checksum "package.json" }}
+            - yarn-install-<< parameters.cache_key >>
+          paths:
+            - node_modules
+      - run:
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          key: yarn-install-<< parameters.cache_key >>-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+
+jobs:
+  install:  
+    executor: node
+    working_directory: ~/project
+    steps:
+      - checkout:
+          path: ~/project
+      - install:
+          cache_key: goblinsatcode-kata
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - node_modules
+  check:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: TypeCheck + Lint + Test:Coverage + Test:Mutation
+          command: yarn ci
+
+
+workflows:
+  install-and-check: 
+    jobs:
+      - install
+      - check:
+          requires:
+            - install
