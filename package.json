@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "goblinsAtCode kata sandbox in JS/TS",
   "main": "index.js",
-  "repository": "git@github.com:Maeevick/chrismas_lights_kata.git",
+  "repository": "git@github.com:Maeevick/goblinsAtCode_kata_sandbox.git",
   "author": "Maeevick <sayag_vs@hotmail.fr>",
   "license": "MIT",
   "private": false,
