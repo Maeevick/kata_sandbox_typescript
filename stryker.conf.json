@@ -8,7 +8,7 @@
     ],
     "jest": {
       "projectType": "custom",
-      "configFile": "jest.config.js"
+      "configFile": "jest.ts.conf.json"
      },
     "tempDirName": "stryker-tmp",
     "testRunner": "jest",

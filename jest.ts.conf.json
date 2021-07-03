@@ -1,0 +1,11 @@
+{
+    "clearMocks": true,
+    "coverageDirectory": "../reports/coverage",
+    "coverageProvider": "v8",
+    "preset": "ts-jest",
+    "rootDir": "src/",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+}

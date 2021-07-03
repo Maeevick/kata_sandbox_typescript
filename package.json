@@ -34,9 +34,9 @@
   },
   "scripts": {
     "start": "ts-node-dev",
-    "test": "jest --maxWorkers 50% --verbose",
-    "test:watch": "jest --watch --maxWorkers 25%",
-    "test:coverage": "jest --coverage",
+    "test": "jest --maxWorkers 50% --verbose --config ./jest.ts.conf.json",
+    "test:watch": "jest --watch --maxWorkers 25% --config ./jest.ts.conf.json",
+    "test:coverage": "jest --coverage --config ./jest.ts.conf.json",
     "test:mutate": "stryker run",
     "lint": "eslint src/ --ext .ts --fix",
     "tsc": "tsc",
