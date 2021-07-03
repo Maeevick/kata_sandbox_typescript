@@ -8,7 +8,7 @@ A very simple boilerplate to have fun with kata and experiments
 ```shell
 yarn start [your file/entry point]
 
-yarn start src/welcome.ts # for exemple
+yarn start src/welcome.ts # for example
 ```
 
 - execute all tests files once 
@@ -42,7 +42,7 @@ __Note__: :warning: Coverage report is not 100% trustable, as you may know, it d
 __Note__: :warning: Mutation testing challenges your tests and your coverage, report is more relevant than "traditional coverage" however it's not silver bullet (read documentation [here](https://stryker-mutator.io/) about limitations)
 
 - **train your Test-Driven Development techniques**, step by step you will need less and less Coverage and Mutation Testing because **great TDD (_and TCR_) is best way to have only useful tested code in a fast and trustable manner.** 
-### TODO
+##### TODO _(maybe some day if necessary_)
 
 :arrow_right: less important practice TDD on kata
 
