@@ -7,6 +7,8 @@ A very simple boilerplate to have fun with kata and experiments
 - execute a typescript program / file (works on javascript program too) 
 ```shell
 yarn start [your file/entry point]
+
+yarn start src/welcome.ts # for exemple
 ```
 
 - execute all tests files once 
