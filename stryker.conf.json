@@ -4,8 +4,7 @@
     "reporters": [
       "html",
       "clear-text",
-      "progress",
-      "dashboard"
+      "progress"
     ],
     "jest": {
       "projectType": "custom",
