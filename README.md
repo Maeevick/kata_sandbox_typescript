@@ -4,22 +4,34 @@ A very simple boilerplate to have fun with kata and experiments
 
 ### Main scripts
 
-- execute a typescript program / file (works on javascript program too)
-    `yarn start [your file/entry point]`
+- execute a typescript program / file (works on javascript program too 
+```shell
+yarn start [your file/entry point]
+```
 
-- execute all tests files once
-    `yarn test`
-    - with coverage 
-        `yarn test:coverage`
+- execute all tests files once 
 
-- execute all tests files (impacted by changes) in watch mode (on save)
-    `yarn test:watch`
+```shell
+yarn test
+```
 
-- execute mutation testing 
-    `yarn test:mutate`
+- execute all tests files (impacted by changes) in watch mode (on save 
+
+```shell
+yarn test:watch
+```
+
+- execute mutation testing (:warning: _configured with very high threshold, if you are not satisfied change them in_ `stryker.conf.json`)
+
+```shell
+yarn test:mutate
+```
 
 - execute the ci workflow (tsc for transpilation, eslint for linter, test:coverage and test:mutate) 
-    `yarn ci`
+
+```shell
+yarn ci
+```
 
 __Note__ :warning: Mutation Testing may be very time consuming, you may prefer to disable it in CI (and setup a nightly or on demand job) :warning:
 

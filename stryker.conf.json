@@ -17,9 +17,9 @@
     "buildCommand": "tsc",
     "mutate": ["src/**/*.ts", "!src/**/*.test.ts"],
     "thresholds": {
-      "high": 90,
-      "low": 75,
-      "break": 60
+      "high": 99,
+      "low": 95,
+      "break": 90
     },
     "timeoutMS": 30000
   }
