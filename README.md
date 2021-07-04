@@ -2,6 +2,21 @@
 
 A very simple boilerplate to have fun with kata and experiments
 
+### Experimental Fork.sh script
+
+- to help to fork the boilerplate on your repository : 
+```shell
+sh fork.sh
+```
+- _do you wish to perform migration ?_
+- _what's the url of the target remote ?_
+    - then script will change the remote url
+    - reset the branch
+    - amend the boilerplate in the first commit
+    - push it on your main branch on your repository
+
+__Note__: feel free to improve it and submit PR, it's far from perfect :D
+
 ### Main scripts
 
 - execute a typescript program / file (works on javascript program too) 
