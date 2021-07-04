@@ -27,6 +27,7 @@ echo "-----------------------------"
 commit_count=$(git rev-list --count HEAD 2>&1)
 git reset HEAD~$(($commit_count-1))
 rm ./CODEOWNERS
+rm -rf ./.circleci
 git add .
 git commit --amend
 while true; do
