@@ -41,6 +41,15 @@ jobs:
           root: ~/project
           paths:
             - node_modules
+  audit:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Audit Dependencies
+          command: yarn audit
   check:
     executor: node
     steps:
@@ -56,6 +65,7 @@ workflows:
   install-and-check: 
     jobs:
       - install
+      - audit
       - check:
           requires:
             - install
