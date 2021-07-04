@@ -45,7 +45,7 @@ __Note__: :warning: Mutation testing challenges your tests and your coverage, re
 
 ### Linter
 
-- Eslint uses mainly the `standard` and `recommended` set of rules, with few personnal preferences, feel free to change it to be confortable
+- Eslint uses mainly the `standard` and `recommended` set of rules, with few personnal preferences, feel free to change it to be confortable.
 
 ##### TODO _(maybe some day if necessary_)
 
