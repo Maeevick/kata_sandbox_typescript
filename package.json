@@ -10,7 +10,7 @@
   "devDependencies": {
     "@stryker-mutator/core": "4.5.1",
     "@stryker-mutator/jest-runner": "4.5.1",
-    "@types/express": "4.17.11",
+    "@types/express": "4.17.12",
     "@types/jest": "26.0.22",
     "@types/mongoose": "5.10.4",
     "@types/node": "14.14.37",
