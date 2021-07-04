@@ -4,7 +4,7 @@ A very simple boilerplate to have fun with kata and experiments
 
 ### Experimental `fork.sh` script
 
-**helper to fork the boilerplate on your repository** (:warning: _at your own risks, but not so high !_ :D)
+**helper to fork the boilerplate on your repository** (:warning: _at your own risks, but not so high !_ :heart:)
 
 ```shell
 sh fork.sh
@@ -18,11 +18,11 @@ sh fork.sh
 - _do you want to push now ?_
     - push it on your main branch on your repository
 
-:arrow_right: **Note**: feel free to improve it and submit PR, it's far from perfect :D
+:arrow_right: **Note**: feel free to improve it and submit PR, it's far from perfect :heart:
 
 ### Main scripts
 
-**Obvious Note**: require to install dependencies
+:arrow_right: **Obvious Note**: require to install dependencies
 ```shell
 yarn
 ```
