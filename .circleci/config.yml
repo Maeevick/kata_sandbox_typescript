@@ -36,7 +36,7 @@ jobs:
       - checkout:
           path: ~/project
       - install:
-          cache_key: goblinsatcode-kata
+          cache_key: kata_sandox
       - persist_to_workspace:
           root: ~/project
           paths:
