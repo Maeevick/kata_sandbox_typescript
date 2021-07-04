@@ -29,4 +29,13 @@ git reset HEAD~$(($commit_count-1))
 rm ./CODEOWNERS
 git add .
 git commit --amend
+while true; do
+    read -p "do you want to push now ? 
+(yes to proceed / anything else to exit and make any change)
+" yn
+    case $yn in
+        yes ) echo "Pushing..."; break;;
+        * ) echo "Fine, Byebye!"; exit;;
+    esac
+done
 git push
