@@ -49,7 +49,7 @@ __Note__: :warning: Mutation testing challenges your tests and your coverage, re
 
 ##### TODO _(maybe some day if necessary_)
 
-:arrow_right: less important practice TDD on kata
+:arrow_right: less important to practice TDD on kata
 
 - setup integration test's stack for web server kata with `supertest`
 - setup end-2-end test's stack for web application with `cypress` and/or `playwright`
