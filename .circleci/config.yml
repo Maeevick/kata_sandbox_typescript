@@ -36,7 +36,7 @@ jobs:
       - checkout:
           path: ~/project
       - install:
-          cache_key: kata_sandox
+          cache_key: kata-sandox
       - persist_to_workspace:
           root: ~/project
           paths:
