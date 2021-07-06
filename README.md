@@ -71,10 +71,3 @@ yarn ci
 ### Linter
 
 - Eslint uses mainly the `standard` and `recommended` set of rules, with few personnal preferences, feel free to change it in : `.eslintrc.json` to be confortable.
-
-##### TODO _(maybe some day if necessary_)
-
-:arrow_right: less important to practice TDD on kata
-
-- setup integration test's stack for web server kata with `supertest`
-- setup end-2-end test's stack for web application with `cypress` and/or `playwright`
