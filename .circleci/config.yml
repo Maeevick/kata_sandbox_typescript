@@ -16,15 +16,15 @@ commands:
     steps:
       - restore_cache:
           keys:
-            - yarn-install-<< parameters.cache_key >>-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-            - yarn-install-<< parameters.cache_key >>-{{ checksum "package.json" }}
-            - yarn-install-<< parameters.cache_key >>
+            - npm-install-<< parameters.cache_key >>-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+            - npm-install-<< parameters.cache_key >>-{{ checksum "package.json" }}
+            - npm-install-<< parameters.cache_key >>
           paths:
             - node_modules
       - run:
-          command: yarn install --frozen-lockfile
+          command: npm install --frozen-lockfile
       - save_cache:
-          key: yarn-install-<< parameters.cache_key >>-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          key: npm-install-<< parameters.cache_key >>-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
 
@@ -49,7 +49,7 @@ jobs:
           at: ~/project
       - run:
           name: Audit Dependencies
-          command: yarn audit
+          command: npm audit
   check:
     executor: node
     steps:
@@ -58,7 +58,7 @@ jobs:
           at: ~/project
       - run:
           name: TypeCheck + Lint + Test:Coverage + Test:Mutation
-          command: yarn ci
+          command: npm run ci
 
 
 workflows:

@@ -22,36 +22,38 @@ sh fork.sh
 
 ### Main scripts
 
+:warning: **Warning**: we decided to switch from yarn 1.22 to npm due to problems to manage dependencies between Jest 27 and Stryker 5
+
 :arrow_right: **Obvious Note**: require to install dependencies
 ```shell
-yarn
+npm i
 ```
 - **execute a typescript program / file** (_works on javascript program too_) 
 ```shell
-yarn start [your file/entry point]
+npm run start [your file/entry point]
 
-yarn start src/welcome.ts # for example
+npm run start src/welcome.ts # for example
 ```
 
 - **execute all tests files once** 
 ```shell
-yarn test
+npm run test
 ```
 
 - **execute all tests files** (_impacted by changes_) **in watch mode** (a.k.a. on save) 
 ```shell
-yarn test:watch
+npm run test:watch
 ```
 
 - **execute mutation testing** 
 ```shell
-yarn test:mutate
+npm run test:mutate
 ```
 :arrow_right: **Note**: configured with very high threshold, you can change them in : `stryker.conf.json`
 
 - **execute all the CI's workflow** (tsc for transpilation, eslint for linter, test:coverage and test:mutate) 
 ```shell
-yarn ci
+npm run ci
 ```
 
 :warning: **Warning**: Mutation Testing may be very time consuming
