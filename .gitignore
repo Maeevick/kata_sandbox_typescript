@@ -108,3 +108,6 @@ reports/
 
 # Typescript build
 build/
+
+# JetBrains IDEs
+.idea/
