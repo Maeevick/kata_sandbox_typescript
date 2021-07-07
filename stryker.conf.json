@@ -12,7 +12,6 @@
      },
     "tempDirName": "stryker-tmp",
     "testRunner": "jest",
-    "coverageAnalysis": "perTest",
     "tsconfigFile": "tsconfig.json",
     "buildCommand": "tsc",
     "mutate": ["src/**/*.ts", "!src/**/*.test.ts"],
