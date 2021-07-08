@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  kata_sandbox_typescript:
+    image: "node:14-alpine"
+    container_name: "kata_sandbox_typescript"
+    working_dir: "/usr/src/app"
+    volumes:
+      - ./:/usr/src/app:rw,Z
+    tty: true
