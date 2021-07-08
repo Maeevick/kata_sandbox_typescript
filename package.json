@@ -26,13 +26,17 @@
     "typescript": "4.3.5"
   },
   "scripts": {
+    "build": "rm -rf ./dist && tsc",
     "start": "ts-node-dev",
     "test": "jest --maxWorkers 50% --verbose --config ./jest.ts.conf.json",
-    "test:watch": "jest --watch --maxWorkers 25% --config ./jest.ts.conf.json",
+    "test:watch": "jest --watchAll --maxWorkers 25% --config ./jest.ts.conf.json",
+    "test:watch:coverage": "jest --watchAll --maxWorkers 25% --config ./jest.ts.conf.json --coverage",
     "test:coverage": "jest --coverage --config ./jest.ts.conf.json",
     "test:mutate": "stryker run",
-    "lint": "eslint src/ --ext .ts --fix",
+    "test:all": "npm run lint:fix && npm run test:coverage && npm run test:mutate",
+    "lint:check": "eslint src/ --ext .ts",
+    "lint:fix": "eslint src/ --ext .ts --fix",
     "tsc": "tsc",
-    "ci": "npm run tsc && npm run lint && npm run test:coverage && npm run test:mutate"
+    "ci": "npm run tsc && npm run lint:fix && npm run test:coverage && npm run test:mutate"
   }
 }
