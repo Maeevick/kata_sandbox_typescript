@@ -25,6 +25,7 @@ sh fork.sh
 :warning: **Warning**: I decided to switch from yarn 1.22 to npm due to problems to manage dependencies between Jest 27 and Stryker 5
 
 :arrow_right: **Obvious Note**: Node 14 (Long Time Support) is recommended in any context.
+
 :arrow_right: **Obvious Note**: install dependencies
 ```shell
 npm i
