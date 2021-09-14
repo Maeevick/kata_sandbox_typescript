@@ -20,7 +20,7 @@
     ],
     "settings": {
         "jest": {
-            "version": 26
+            "version": 27
         }
     },
     "ignorePatterns": ["*.config.ts", "*.config.js"],
