@@ -19,7 +19,7 @@
     "eslint-plugin-import": "2.25.2",
     "eslint-plugin-jest": "25.2.2",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-promise": "5.1.1",
     "jest": "27.3.1",
     "ts-jest": "27.0.7",
     "ts-node-dev": "1.1.8",
