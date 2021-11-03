@@ -2,24 +2,6 @@
 
 A very simple boilerplate to have fun with kata and experiments
 
-### Experimental `fork.sh` script
-
-**helper to fork the boilerplate on your repository** (:warning: _at your own risks, but not so high !_ :heart:)
-
-```shell
-sh fork.sh
-```
-
-- _do you wish to perform migration ?_
-- _what's the url of the target remote ?_
-    - then script will change the remote url
-    - reset the branch
-    - amend the boilerplate in the first commit
-- _do you want to push now ?_
-    - push it on your main branch on your repository
-
-:arrow_right: **Note**: feel free to improve it and submit PR, it's far from perfect :heart:
-
 ### Main scripts
 
 :warning: **Warning**: I decided to switch from yarn 1.22 to npm due to problems to manage dependencies between Jest 27 and Stryker 5
