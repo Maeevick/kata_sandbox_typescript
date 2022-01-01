@@ -1,4 +1,4 @@
-# GoblinsAtCode's kata sandbox (@Maeevick)
+# TS kata sandbox
 
 A very simple boilerplate to have fun with kata and experiments
 
