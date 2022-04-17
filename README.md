@@ -1,6 +1,6 @@
 # TS kata sandbox
 
-A very simple boilerplate to have fun with kata and experiments
+Just a minimalist sandbox/boilerplate to train your skills with typescript, eslint and jest on kata/exercices or something else.
 
 ### Main scripts
 
