@@ -57,3 +57,9 @@ npm run ci
 ### Linter
 
 - Eslint uses mainly the `standard` and `recommended` set of rules, with few personnal preferences, feel free to change it in : `.eslintrc.json` to be confortable.
+
+### Some resources/kata to train your skills
+
+- https://kata-log.rocks/
+- https://codingdojo.org/
+- https://katalyst.codurance.com/browse
