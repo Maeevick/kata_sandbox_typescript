@@ -20,7 +20,7 @@
     "eslint-plugin-jest": "26.1.5",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.0.0",
-    "fast-check": "^2.24.0",
+    "fast-check": "^2.25.0",
     "jest": "27.5.1",
     "ts-jest": "27.1.4",
     "ts-node-dev": "1.1.8",
