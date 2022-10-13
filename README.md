@@ -6,7 +6,7 @@ Just a minimalist sandbox/boilerplate to train your skills with typescript, esli
 
 :warning: **Warning**: I decided to switch from yarn 1.22 to npm due to problems to manage dependencies between Jest 27 and Stryker 5
 
-:arrow_right: **Obvious Note**: Node 16 (Long Time Support) is recommended in any context.
+:arrow_right: **Obvious Note**: Node 18 (Long Time Support) is recommended in any context.
 
 :arrow_right: **Obvious Note**: install dependencies
 ```shell
@@ -63,3 +63,17 @@ npm run ci
 - https://kata-log.rocks/
 - https://codingdojo.org/
 - https://katalyst.codurance.com/browse
+
+### Limitations 
+
+- source-map issue : explicitely install source-map 0.7.4 to fix the issue https://github.com/mozilla/source-map/issues/432
+
+(@jest/reporter has source-map 0.6 in deps)
+
+```
+"devDependencies": {
+    ...
+    "source-map": "^0.7.4",
+    ...
+}
+```
