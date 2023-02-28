@@ -12,7 +12,7 @@
     "@stryker-mutator/jest-runner": "^6.2.3",
     "@types/jest": "27.5.0",
     "@types/node": "18.8.5",
-    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.40.0",
     "eslint": "^8.25.0",
     "eslint-config-standard": "^17.0.0",
